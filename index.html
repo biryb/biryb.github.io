@@ -57,9 +57,13 @@
     
     <section id="blog" class="container">
         <h2>Short Reads</h2>
-        <p>Latest Posts:</p>
-        <ul id="blog-posts">
-            <li><a href="blog/post1.html">Coming soon...</a></li>
+        <ul>
+            {% for post in site.posts %}
+                <li>
+                    <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+                    <small>({{ post.date | date: "%B %d, %Y" }})</small>
+                </li>
+            {% endfor %}
         </ul>
     </section>
     
