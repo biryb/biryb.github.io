@@ -1,1 +1,44 @@
+title: "Birgitta Ryback | Mass Spectrometrist"
+description: "Bioanalytical mass spectrometrist specializing in metabolomics and lipidomics."
+author: "Birgitta Ryback"
+
+baseurl: ""  # Leave empty if publishing on GitHub Pages user site (username.github.io)
+url: "https://biryb.github.io"  # Update with your actual GitHub Pages URL
+
+theme: "minimal-mistakes-jekyll"  # Can be changed to another Jekyll theme
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-paginate
+
+permalink: /:categories/:title/
+paginate: 5
+paginate_path: "/page:num/"
+
+# Navigation
+nav:
+  - title: "About"
+    url: "/about/"
+  - title: "Experience"
+    url: "/experience/"
+  - title: "Projects"
+    url: "/projects/"
+  - title: "Short reads"
+    url: "/blog/"
+  - title: "Contact"
+    url: "/contact/"
+
+# Blog settings
+collections:
+  short-reads:
+    output: true
+    permalink: /short-reads/:title/
+
+include:
+  - _pages
+  - _short-reads
+
+# Profile Image
+profile_image: "Birgitta Ryback-015_Bearbeitet.jpg"
 
