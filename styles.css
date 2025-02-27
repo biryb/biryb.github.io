@@ -49,6 +49,7 @@ header nav ul li a:hover {
     background-color: #fff;  /* White background for profile */
     padding: 2rem 0;
     border-bottom: 4px solid #6c4f87;  /* Muted purple border at the bottom */
+    text-align: center; /* Center profile content */
 }
 
 #profile .profile-img {
@@ -62,6 +63,7 @@ header nav ul li a:hover {
 #profile h1 {
     font-size: 2.5rem;
     color: #6c4f87;  /* Muted purple */
+    margin-bottom: 0.5rem;
 }
 
 #profile h2 {
@@ -129,9 +131,13 @@ footer {
     color: white;
     text-align: center;
     padding: 1rem 0;
-    position: absolute;
     width: 100%;
+    position: relative; /* Fixes footer positioning */
     bottom: 0;
+}
+
+footer p {
+    font-size: 1rem;
 }
 
 /* Mobile Styling */
