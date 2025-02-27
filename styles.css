@@ -43,11 +43,9 @@ section {
     padding: 50px 20px;
 }
 .profile-img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    border: 5px solid #fff;
-    margin-bottom: 20px;
+    width: 100%;      /* or any specific width you want */
+    height: auto;     /* keeps the aspect ratio intact */
+    object-fit: contain;  /* ensures the image fits within its container without distortion */
 }
 h1 {
     font-size: 36px;
