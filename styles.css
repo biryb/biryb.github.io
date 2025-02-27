@@ -17,8 +17,7 @@ body {
 
 /* Fixed Navigation Bar */
 header {
-    background-color: #333;  /* Dark gray */
-    color: white;
+    background-color: transparent; /* No background, blending into purple */
     padding: 1rem 0;
     text-align: center;
     position: fixed;
@@ -38,7 +37,7 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: white;
+    color: #222;  /* Dark gray text */
     text-decoration: none;
     font-size: 1.1rem;
     text-transform: uppercase;
@@ -47,17 +46,15 @@ header nav ul li a {
 
 header nav ul li a:hover {
     text-decoration: underline;
-    color: #aaa;  /* Lighter gray hover effect */
+    color: #555;  /* Medium gray hover effect */
 }
 
-/* Profile Section */
+/* Profile Section (Blends into the background) */
 #profile {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #fff;  /* White background for contrast */
     padding: 2rem;
-    border-bottom: 4px solid #555;  /* Darker gray border at the bottom */
     text-align: center;
 }
 
@@ -70,19 +67,19 @@ header nav ul li a:hover {
 
 #profile h1 {
     font-size: 2.5rem;
-    color: #222;  /* Black text */
+    color: #222;  /* Dark gray text */
     margin-top: 1rem;
 }
 
 #profile h2 {
     font-size: 1.5rem;
-    color: #555;  /* Dark gray */
+    color: #555;  /* Medium gray */
     margin-top: 0.5rem;
 }
 
 #profile p {
     font-size: 1.1rem;
-    color: #777;  /* Medium gray */
+    color: #777;  /* Light gray */
     margin-top: 0.5rem;
 }
 
@@ -92,26 +89,26 @@ header nav ul li a:hover {
     max-width: 1200px;
     margin: 2rem auto;
     padding: 1.5rem;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.8); /* Slight transparency */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .container h2 {
     font-size: 2rem;
-    color: #222;  /* Black */
+    color: #222;  /* Dark gray */
     margin-bottom: 1rem;
 }
 
 .container h3 {
     font-size: 1.5rem;
-    color: #555;  /* Dark gray */
+    color: #555;  /* Medium gray */
     margin-bottom: 0.5rem;
 }
 
 .container p {
     font-size: 1.1rem;
-    color: #777;  /* Medium gray */
+    color: #777;  /* Light gray */
     line-height: 1.6;
 }
 
@@ -137,8 +134,8 @@ header nav ul li a:hover {
 
 /* Fixed Footer */
 footer {
-    background-color: #333;  /* Dark gray */
-    color: white;
+    background-color: transparent; /* No background, blending into purple */
+    color: #222;  /* Dark gray text */
     text-align: center;
     padding: 1rem 0;
     position: fixed;
