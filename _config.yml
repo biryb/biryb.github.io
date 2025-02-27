@@ -5,7 +5,9 @@ author: "Birgitta Ryback"
 baseurl: ""  # Leave empty if publishing on GitHub Pages user site (username.github.io)
 url: "https://biryb.github.io"  # Update with your actual GitHub Pages URL
 
-theme: "minimal-mistakes-jekyll"  # Can be changed to another Jekyll theme
+remote_theme: mmistakes/minimal-mistakes
+plugins:
+  - jekyll-remote-theme
 
 plugins:
   - jekyll-feed
