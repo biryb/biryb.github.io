@@ -1,84 +1,156 @@
-/* General reset */
-body, h1, h2, h3, p, ul, li {
+/* Reset some default styling */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f7fa;
+    font-family: 'Arial', sans-serif;
+    background-color: #d8cfe5;  /* Soft purple-gray background */
     color: #333;
     line-height: 1.6;
-    padding-top: 50px;
+    margin: 0;
 }
+
 header {
-    background-color: #fff;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 100;
+    background-color: #4b7f40;  /* Lush dark green */
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
 }
-nav ul {
-    list-style-type: none;
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+    color: #a8d08d;  /* Light green hover effect */
+}
+
+#profile {
     display: flex;
     justify-content: center;
+    align-items: center;
+    background-color: #ffffff;  /* White background for profile */
+    padding: 2rem 0;
+    border-bottom: 4px solid #4b7f40;  /* Dark green border at the bottom */
 }
-nav ul li {
-    margin: 0 15px;
-}
-nav ul li a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-}
-section {
-    padding: 60px 20px;
-    max-width: 900px;
-    margin: 0 auto;
-}
-#profile {
-    text-align: center;
-    padding: 50px 20px;
-}
-.profile-img {
-    width: 100%;      /* or any specific width you want */
-    height: auto;     /* keeps the aspect ratio intact */
-    object-fit: contain;  /* ensures the image fits within its container without distortion */
-}
-h1 {
-    font-size: 36px;
-    margin-bottom: 10px;
-}
-h2 {
-    font-size: 24px;
-    color: #777;
-    margin-bottom: 20px;
-}
-.social-icons a {
-    margin: 0 10px;
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    background-color: #f0f0f0;
+
+#profile .profile-img {
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
-    text-align: center;
-    line-height: 30px;
-    color: #333;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
+    object-fit: cover;
+    margin-right: 2rem;
 }
-.social-icons a:hover {
-    background-color: #0066cc;
-    color: #fff;
+
+#profile h1 {
+    font-size: 2.5rem;
+    color: #4b7f40;  /* Dark green */
 }
+
+#profile h2 {
+    font-size: 1.5rem;
+    color: #87b37b;  /* Lighter green */
+    margin-top: 0.5rem;
+}
+
+#profile p {
+    font-size: 1.1rem;
+    color: #7f8c8d;  /* Subtle gray for text */
+    margin-top: 0.5rem;
+}
+
 .container {
-    margin-bottom: 50px;
+    width: 80%;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+.container h2 {
+    font-size: 2rem;
+    color: #4b7f40;  /* Dark green */
+    margin-bottom: 1rem;
+}
+
+.container h3 {
+    font-size: 1.5rem;
+    color: #6a945d;  /* Medium green */
+    margin-bottom: 0.5rem;
+}
+
+.container p {
+    font-size: 1.1rem;
+    color: #7f8c8d;  /* Subtle gray for text */
+    line-height: 1.6;
+}
+
+.container ul {
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.container ul li {
+    margin-bottom: 1rem;
+}
+
+.container ul li a {
+    color: #6a945d;  /* Medium green for links */
+    font-size: 1.1rem;
+    text-decoration: none;
+}
+
+.container ul li a:hover {
+    color: #4b7f40;  /* Dark green hover effect */
+    text-decoration: underline;
+}
+
 footer {
-    background-color: #fff;
+    background-color: #4b7f40;  /* Dark green footer */
+    color: white;
     text-align: center;
-    padding: 10px;
-    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem 0;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Mobile Styling */
+@media (max-width: 768px) {
+    header nav ul li {
+        display: block;
+        margin: 0.5rem 0;
+    }
+
+    #profile {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #profile .profile-img {
+        margin-bottom: 1rem;
+    }
+
+    .container {
+        width: 90%;
+    }
 }
