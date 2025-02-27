@@ -1,75 +1,86 @@
-/* General Styles */
+/* General reset */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #0e3b2a;
-    color: #ffffff;
+    background-color: #f4f7fa;
+    color: #333;
+    line-height: 1.6;
+    padding-top: 50px;
 }
-
-.container {
-    width: 80%;
-    margin: auto;
-    padding: 20px 0;
-}
-
-/* Header */
 header {
-    background-color: #0a2b20;
-    padding: 20px 0;
-    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
 }
-
-header h1 {
-    margin: 0;
-    font-size: 2em;
-}
-
 nav ul {
     list-style-type: none;
-    padding: 0;
+    display: flex;
+    justify-content: center;
 }
-
 nav ul li {
-    display: inline;
-    margin-right: 20px;
+    margin: 0 15px;
 }
-
 nav ul li a {
-    color: #ffffff;
     text-decoration: none;
+    color: #333;
     font-weight: bold;
 }
-
-/* Profile Section */
-.profile {
-    text-align: center;
-    padding: 50px 0;
+section {
+    padding: 60px 20px;
+    max-width: 900px;
+    margin: 0 auto;
 }
-
-.profile img {
+#profile {
+    text-align: center;
+    padding: 50px 20px;
+}
+.profile-img {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    border: 3px solid #ffffff;
+    border: 5px solid #fff;
+    margin-bottom: 20px;
 }
-
-/* Sections */
-section {
-    background-color: #154734;
-    padding: 40px;
-    margin: 20px 0;
-    border-radius: 10px;
+h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
 }
-
 h2 {
-    border-bottom: 2px solid #ffffff;
-    padding-bottom: 10px;
+    font-size: 24px;
+    color: #777;
+    margin-bottom: 20px;
 }
-
-/* Footer */
-footer {
+.social-icons a {
+    margin: 0 10px;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: #f0f0f0;
+    border-radius: 50%;
     text-align: center;
-    padding: 20px;
-    background-color: #0a2b20;
+    line-height: 30px;
+    color: #333;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+.social-icons a:hover {
+    background-color: #0066cc;
+    color: #fff;
+}
+.container {
+    margin-bottom: 50px;
+}
+footer {
+    background-color: #fff;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
 }
