@@ -8,20 +8,28 @@
 body {
     font-family: 'Arial', sans-serif;
     background-color: #d8cfe5;  /* Soft purple-gray background */
-    color: #333;
+    color: #222;  /* Dark gray text */
     line-height: 1.6;
     margin: 0;
+    padding-top: 60px; /* Prevent content from being hidden under the fixed header */
+    padding-bottom: 50px; /* Prevent content from being hidden under the fixed footer */
 }
 
+/* Fixed Navigation Bar */
 header {
-    background-color: #6c4f87;  /* Muted purple */
+    background-color: #333;  /* Dark gray */
     color: white;
     padding: 1rem 0;
     text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 header nav ul {
     list-style: none;
+    padding: 0;
 }
 
 header nav ul li {
@@ -39,17 +47,18 @@ header nav ul li a {
 
 header nav ul li a:hover {
     text-decoration: underline;
-    color: #a493b8;  /* Lighter purple hover effect */
+    color: #aaa;  /* Lighter gray hover effect */
 }
 
+/* Profile Section */
 #profile {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    background-color: #fff;  /* White background for profile */
-    padding: 2rem 0;
-    border-bottom: 4px solid #6c4f87;  /* Muted purple border at the bottom */
-    text-align: center; /* Center profile content */
+    background-color: #fff;  /* White background for contrast */
+    padding: 2rem;
+    border-bottom: 4px solid #555;  /* Darker gray border at the bottom */
+    text-align: center;
 }
 
 #profile .profile-img {
@@ -57,27 +66,27 @@ header nav ul li a:hover {
     height: 150px;
     border-radius: 50%;
     object-fit: cover;
-    margin-right: 2rem;
 }
 
 #profile h1 {
     font-size: 2.5rem;
-    color: #6c4f87;  /* Muted purple */
-    margin-bottom: 0.5rem;
+    color: #222;  /* Black text */
+    margin-top: 1rem;
 }
 
 #profile h2 {
     font-size: 1.5rem;
-    color: #8e7f9d;  /* Light purple-gray */
+    color: #555;  /* Dark gray */
     margin-top: 0.5rem;
 }
 
 #profile p {
     font-size: 1.1rem;
-    color: #7f8c8d;  /* Soft gray */
+    color: #777;  /* Medium gray */
     margin-top: 0.5rem;
 }
 
+/* Content Sections */
 .container {
     width: 80%;
     max-width: 1200px;
@@ -90,19 +99,19 @@ header nav ul li a:hover {
 
 .container h2 {
     font-size: 2rem;
-    color: #6c4f87;  /* Muted purple */
+    color: #222;  /* Black */
     margin-bottom: 1rem;
 }
 
 .container h3 {
     font-size: 1.5rem;
-    color: #8e7f9d;  /* Light purple-gray */
+    color: #555;  /* Dark gray */
     margin-bottom: 0.5rem;
 }
 
 .container p {
     font-size: 1.1rem;
-    color: #7f8c8d;  /* Soft gray */
+    color: #777;  /* Medium gray */
     line-height: 1.6;
 }
 
@@ -116,24 +125,26 @@ header nav ul li a:hover {
 }
 
 .container ul li a {
-    color: #8e7f9d;  /* Light purple-gray for links */
+    color: #444;  /* Dark gray links */
     font-size: 1.1rem;
     text-decoration: none;
 }
 
 .container ul li a:hover {
-    color: #6c4f87;  /* Muted purple for link hover */
+    color: #000;  /* Black hover effect */
     text-decoration: underline;
 }
 
+/* Fixed Footer */
 footer {
-    background-color: #6c4f87;  /* Muted purple footer */
+    background-color: #333;  /* Dark gray */
     color: white;
     text-align: center;
     padding: 1rem 0;
+    position: fixed;
     width: 100%;
-    position: relative; /* Fixes footer positioning */
     bottom: 0;
+    z-index: 1000;
 }
 
 footer p {
@@ -145,15 +156,6 @@ footer p {
     header nav ul li {
         display: block;
         margin: 0.5rem 0;
-    }
-
-    #profile {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    #profile .profile-img {
-        margin-bottom: 1rem;
     }
 
     .container {
