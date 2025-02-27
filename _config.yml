@@ -36,6 +36,16 @@ collections:
   short-reads:
     output: true
     permalink: /short-reads/:title/
+    
+defaults:
+  - scope:
+      path: "_posts"
+    values:
+      layout: post
+  - scope:
+      path: "_short-reads"
+    values:
+      layout: post
 
 include:
   - _pages
