@@ -4,28 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Birgitta Ryback | Mass Spectrometrist</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
     <header>
         <nav>
             <ul>
                 <li><a href="#about">Bio</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#blog">Short Reads</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
     
     <section id="profile">
-        <div class="profile-container">
+        <div>
             <img src="assets/images/Birgitta Ryback-015_Bearbeitet.jpg" alt="Birgitta Ryback" class="profile-img">
             <h1>Birgitta Ryback</h1>
             <h2>Bioanalytical Mass Spectrometrist</h2>
             <p>Specializing in metabolomics and lipidomics.</p>
-            <button class="download-cv">Download CV</button>
             <div class="social-icons">
                 <a href="#"><img src="assets/icons/github.svg" alt="GitHub"></a>
                 <a href="#"><img src="assets/icons/linkedin.svg" alt="LinkedIn"></a>
@@ -55,19 +54,7 @@
         </ul>
     </section>
     
-    <section id="blog" class="container">
-        <h2>Short Reads</h2>
-        <ul>
-            {% for post in site.posts %}
-                <li>
-                    <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-                    <small>({{ post.date | date: "%B %d, %Y" }})</small>
-                </li>
-            {% endfor %}
-        </ul>
-    </section>
-    
-    <section id="contact" class="container contact">
+    <section id="contact" class="container">
         <h2>Contact</h2>
         <p>Email: <a href="mailto:birgittaryback@gmail.com">birgittaryback@gmail.com</a></p>
         <p>Waltham, MA</p>
@@ -76,5 +63,6 @@
     <footer>
         <p>&copy; 2025 Birgitta Ryback</p>
     </footer>
+
 </body>
 </html>
