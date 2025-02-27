@@ -14,7 +14,7 @@ body {
 }
 
 header {
-    background-color: #4b7f40;  /* Lush dark green */
+    background-color: #6c4f87;  /* Muted purple */
     color: white;
     padding: 1rem 0;
     text-align: center;
@@ -39,16 +39,16 @@ header nav ul li a {
 
 header nav ul li a:hover {
     text-decoration: underline;
-    color: #a8d08d;  /* Light green hover effect */
+    color: #a493b8;  /* Lighter purple hover effect */
 }
 
 #profile {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #ffffff;  /* White background for profile */
+    background-color: #fff;  /* White background for profile */
     padding: 2rem 0;
-    border-bottom: 4px solid #4b7f40;  /* Dark green border at the bottom */
+    border-bottom: 4px solid #6c4f87;  /* Muted purple border at the bottom */
 }
 
 #profile .profile-img {
@@ -61,18 +61,18 @@ header nav ul li a:hover {
 
 #profile h1 {
     font-size: 2.5rem;
-    color: #4b7f40;  /* Dark green */
+    color: #6c4f87;  /* Muted purple */
 }
 
 #profile h2 {
     font-size: 1.5rem;
-    color: #87b37b;  /* Lighter green */
+    color: #8e7f9d;  /* Light purple-gray */
     margin-top: 0.5rem;
 }
 
 #profile p {
     font-size: 1.1rem;
-    color: #7f8c8d;  /* Subtle gray for text */
+    color: #7f8c8d;  /* Soft gray */
     margin-top: 0.5rem;
 }
 
@@ -88,19 +88,19 @@ header nav ul li a:hover {
 
 .container h2 {
     font-size: 2rem;
-    color: #4b7f40;  /* Dark green */
+    color: #6c4f87;  /* Muted purple */
     margin-bottom: 1rem;
 }
 
 .container h3 {
     font-size: 1.5rem;
-    color: #6a945d;  /* Medium green */
+    color: #8e7f9d;  /* Light purple-gray */
     margin-bottom: 0.5rem;
 }
 
 .container p {
     font-size: 1.1rem;
-    color: #7f8c8d;  /* Subtle gray for text */
+    color: #7f8c8d;  /* Soft gray */
     line-height: 1.6;
 }
 
@@ -114,18 +114,18 @@ header nav ul li a:hover {
 }
 
 .container ul li a {
-    color: #6a945d;  /* Medium green for links */
+    color: #8e7f9d;  /* Light purple-gray for links */
     font-size: 1.1rem;
     text-decoration: none;
 }
 
 .container ul li a:hover {
-    color: #4b7f40;  /* Dark green hover effect */
+    color: #6c4f87;  /* Muted purple for link hover */
     text-decoration: underline;
 }
 
 footer {
-    background-color: #4b7f40;  /* Dark green footer */
+    background-color: #6c4f87;  /* Muted purple footer */
     color: white;
     text-align: center;
     padding: 1rem 0;
